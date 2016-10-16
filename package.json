@@ -1,0 +1,17 @@
+{
+  "name": "happybrithday",
+  "version": "1.0.0",
+  "description": "happybrithday",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "npm run clean && npm run build:webpack",
+    "start": "node devServer.js",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.4.1"
+  }
+}
